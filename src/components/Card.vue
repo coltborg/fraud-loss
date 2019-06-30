@@ -34,6 +34,10 @@ export default {
         yAxes: [
           {
             id: "cards-y-axis",
+            offset: true,
+            gridLines: {
+              display: false
+            },
             scaleLabel: {
               display: true,
               labelString: "Amount of Active Cards",
@@ -42,6 +46,11 @@ export default {
           },
           {
             id: "fraud-y-axis",
+            position: "right",
+            offset: true,
+            gridLines: {
+              display: false
+            },
             scaleLabel: {
               display: true,
               labelString: "Amount of Money Lost ($)",
